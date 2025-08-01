@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delhi HC Case Fetcher</title>
+</head>
+<body>
+  <h1>Delhi High Court Case Fetcher</h1>
+
+  <form id="caseForm">
+    <label>Case Type:</label>
+    <select name="caseType" required>
+      <option value="CS(OS)">CS(OS)</option>
+      <option value="W.P.(C)">W.P.(C)</option>
+      <option value="CRL.A.">CRL.A.</option>
+      <option value="FAO">FAO</option>
+      <option value="RC.REV.">RC.REV.</option>
+      <!-- Add more as needed -->
+    </select><br>
+
+    <label>Case Number:</label>
+    <input type="text" name="caseNumber" required><br>
+
+    <label>Filing Year:</label>
+    <input type="text" name="caseYear" required><br>
+
+    <button type="submit">Fetch Case</button>
+  </form>
+
+  <pre id="result"></pre>
+
+  <script>
+    document.getElementById('caseForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      const data = Object.fromEntries(formData.entries());
+
+      try {
+        const res = await fetch('http://127.0.0.1:5000/fetch-delhi-case', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+
+        const json = await res.json();
+        document.getElementById('result').textContent = JSON.stringify(json, null, 2);
+      } catch (err) {
+        document.getElementById('result').textContent = "❌ Error fetching data: " + err;
+      }
+    });
+  </script>
+</body>
+</html>

@@ -288,7 +288,7 @@
 												</li>
 												<li class="item-list">
 													<!--<a href="https://delhihighcourt.nic.in/app/gatepass/register">e-Visitor Pass</a>-->
-								                     <a href="https://www.evisitordhc.gov.in/evisitordhcweb/">e-Visitor Pass</a>
+								                 <a href="https://www.evisitordhc.gov.in/evisitordhcweb/">e-Visitor Pass</a>
 												</li>
 												<li class="item-list">
 													<a href="https://edhcr.nic.in/">e-DHCR</a>
@@ -383,424 +383,82 @@
 		<!-- Logo Section Header End -->
 	</header>
 
-    
-<style>
-.captcha-label {
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-    text-align: center;
-}
+    <div class="breadcrum-area">
+    <div class="breadcrumb-title-sec">
+        <div class="breadcrumb-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-10 col-lg-10">
+                        <div class="breadcrumb-body-inner">
+                            <div class="region region-breadcrumb">
+                                <div id="block-delhihighcourt-breadcrumbs" class="block block-system block-system-breadcrumb-block">
+                                    <nav aria-label="breadcrumb" class="bradurcum_custom">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item">
+                                                <a href="/">Home</a>
+                                            </li>
+                                            <li class="breadcrumb-item inactive">
+                                            <a href="#">CASE STATUS</a>
+                                            </li>
+                                            <li class="breadcrumb-item inactive">
+                                                <a href="#">CASE WISE</a>
+                                            </li>
+                                        </ol>
+                                    </nav>
 
-/* 3D effect on the captcha code */
-.captcha-code {
-    font-size: 1.5rem;
-    /* Larger font for visibility */
-    color: #d81b60;
-    font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), -1px -1px 3px rgba(255, 255, 255, 0.7);
-    transform: perspective(500px) rotateX(10deg) rotateY(10deg);
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
-}
+                                </div>
 
-.captcha-code:hover {
-    transform: perspective(500px) rotateX(0deg) rotateY(0deg) scale(1.1);
-    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(255, 255, 255, 0.9);
-}
-</style>
-<div class="breadcrum-area">
-	<div class="breadcrumb-title-sec">
-				<div class="breadcrumb-bg">
-					<div class="container">
-						<div class="row">
-							<div class="col-12 col-sm-12 col-md-10 col-lg-10">
-								<div class="breadcrumb-body-inner">
-									<div class="region region-breadcrumb">
-										<div id="block-delhihighcourt-breadcrumbs" class="block block-system block-system-breadcrumb-block">
-											<nav aria-label="breadcrumb" class="bradurcum_custom">
-												<ol class="breadcrumb">
-													<li class="breadcrumb-item">
-														<a href="/">Home</a>
-													</li>
-													<li class="breadcrumb-item inactive">
-													<a href="#">CASE STATUS</a>
-													</li>
-													<li class="breadcrumb-item inactive">
-														<a href="#">CASE WISE</a>
-													</li>
-												</ol>
-											</nav>
+                            </div>
 
-										</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+                        <a href="javascript:void(0);" onclick="history.back();" class="btn quick-btn">Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-									</div>
 
-								</div>
-							</div>
-							<div class="col-12 col-sm-12 col-md-2 col-lg-2">
-								<a href="javascript:void(0);" onclick="history.back();" class="btn quick-btn">Back</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	
 
 <div class="tabs-sec">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 col-sm-12 col-md-12 col-lg-12">
-				<div class="multistep_content">
-					<ul class="nav nav-tabs">
-	<li class="nav-item">
-		<a href="https://delhihighcourt.nic.in/app/get-case-type-status" class="nav-link active"><img src="https://delhihighcourt.nic.in/app/public/ois/images/case-wise.png"> Case Wise</a>
-	</li>
-	<li class="nav-item">
-		<a href="https://delhihighcourt.nic.in/app/party-name-wise-status" class="nav-link"><img src="https://delhihighcourt.nic.in/app/public/ois/images/former-judges-wise.png"> Party Name</a>
-	</li>
-	
-	<li class="nav-item">
-		<a href="https://delhihighcourt.nic.in/app/advocate-name-wise-status" class="nav-link"><img src="https://delhihighcourt.nic.in/app/public/ois/images/former-judges-wise.png"> Advocate Name</a>
-	</li>
-	<li class="nav-item">
-		<a href="https://delhihighcourt.nic.in/app/diary-no-wise-status" class="nav-link"><img src="https://delhihighcourt.nic.in/app/public/ois/images/sitting-judges-wise.png"> Diary No</a>
-	</li>
-	
-	
-	
-	
-</ul>					<div class="tab-content">
-						<div class="tab-pane container active" id="menu1">
-							<div class="row">
-								<div class="col-12 col-sm-12 col-md-12 col-xl-4">
-									<div class="form-group">
-										<label>Case Type:</label>
-										<select class="form-control" name="case_type" id="case_type">
-											<option value="">Select</option>
-																							<option value="ADMIN.REPORT">ADMIN.REPORT</option>
-																							<option value="ARB.A.">ARB.A.</option>
-																							<option value="ARB. A. (COMM.)">ARB. A. (COMM.)</option>
-																							<option value="ARB.P.">ARB.P.</option>
-																							<option value="BAIL APPLN.">BAIL APPLN.</option>
-																							<option value="CA">CA</option>
-																							<option value="CA (COMM.IPD-CR)">CA (COMM.IPD-CR)</option>
-																							<option value="C.A.(COMM.IPD-GI)">C.A.(COMM.IPD-GI)</option>
-																							<option value="C.A.(COMM.IPD-PAT)">C.A.(COMM.IPD-PAT)</option>
-																							<option value="C.A.(COMM.IPD-PV)">C.A.(COMM.IPD-PV)</option>
-																							<option value="C.A.(COMM.IPD-TM)">C.A.(COMM.IPD-TM)</option>
-																							<option value="CAVEAT(CO.)">CAVEAT(CO.)</option>
-																							<option value="CC(ARB.)">CC(ARB.)</option>
-																							<option value="CCP(CO.)">CCP(CO.)</option>
-																							<option value="CCP(REF)">CCP(REF)</option>
-																							<option value="CEAC">CEAC</option>
-																							<option value="CEAR">CEAR</option>
-																							<option value="CHAT.A.C.">CHAT.A.C.</option>
-																							<option value="CHAT.A.REF">CHAT.A.REF</option>
-																							<option value="CMI">CMI</option>
-																							<option value="CM(M)">CM(M)</option>
-																							<option value="CM(M)-IPD">CM(M)-IPD</option>
-																							<option value="C.O.">C.O.</option>
-																							<option value="CO.APP.">CO.APP.</option>
-																							<option value="CO.APPL.(C)">CO.APPL.(C)</option>
-																							<option value="CO.APPL.(M)">CO.APPL.(M)</option>
-																							<option value="CO.A(SB)">CO.A(SB)</option>
-																							<option value="C.O.(COMM.IPD-CR)">C.O.(COMM.IPD-CR)</option>
-																							<option value="C.O.(COMM.IPD-GI)">C.O.(COMM.IPD-GI)</option>
-																							<option value="C.O.(COMM.IPD-PAT)">C.O.(COMM.IPD-PAT)</option>
-																							<option value="C.O. (COMM.IPD-TM)">C.O. (COMM.IPD-TM)</option>
-																							<option value="CO.EX.">CO.EX.</option>
-																							<option value="CONT.APP.(C)">CONT.APP.(C)</option>
-																							<option value="CONT.CAS(C)">CONT.CAS(C)</option>
-																							<option value="CONT.CAS.(CRL)">CONT.CAS.(CRL)</option>
-																							<option value="CO.PET.">CO.PET.</option>
-																							<option value="C.REF.(O)">C.REF.(O)</option>
-																							<option value="CRL.A.">CRL.A.</option>
-																							<option value="CRL.L.P.">CRL.L.P.</option>
-																							<option value="CRL.M.C.">CRL.M.C.</option>
-																							<option value="CRL.M.(CO.)">CRL.M.(CO.)</option>
-																							<option value="CRL.M.I.">CRL.M.I.</option>
-																							<option value="CRL.O.">CRL.O.</option>
-																							<option value="CRL.O.(CO.)">CRL.O.(CO.)</option>
-																							<option value="CRL.REF.">CRL.REF.</option>
-																							<option value="CRL.REV.P.">CRL.REV.P.</option>
-																							<option value="CRL.REV.P.(MAT.)">CRL.REV.P.(MAT.)</option>
-																							<option value="CRL.REV.P.(NDPS)">CRL.REV.P.(NDPS)</option>
-																							<option value="CRL.REV.P.(NI)">CRL.REV.P.(NI)</option>
-																							<option value="C.R.P.">C.R.P.</option>
-																							<option value="CRP-IPD">CRP-IPD</option>
-																							<option value="C.RULE">C.RULE</option>
-																							<option value="CS(COMM)">CS(COMM)</option>
-																							<option value="CS(OS)">CS(OS)</option>
-																							<option value="CS(OS) GP">CS(OS) GP</option>
-																							<option value="CUSAA">CUSAA</option>
-																							<option value="CUS.A.C.">CUS.A.C.</option>
-																							<option value="CUS.A.R.">CUS.A.R.</option>
-																							<option value="CUSTOM A.">CUSTOM A.</option>
-																							<option value="DEATH SENTENCE REF.">DEATH SENTENCE REF.</option>
-																							<option value="DEMO">DEMO</option>
-																							<option value="EDC">EDC</option>
-																							<option value="EDR">EDR</option>
-																							<option value="EFA(COMM)">EFA(COMM)</option>
-																							<option value="EFA(OS)">EFA(OS)</option>
-																							<option value="EFA(OS)  (COMM)">EFA(OS)  (COMM)</option>
-																							<option value="EFA(OS)(IPD)">EFA(OS)(IPD)</option>
-																							<option value="EL.PET.">EL.PET.</option>
-																							<option value="ETR">ETR</option>
-																							<option value="EX.F.A.">EX.F.A.</option>
-																							<option value="EX.P.">EX.P.</option>
-																							<option value="EX.S.A.">EX.S.A.</option>
-																							<option value="FAO">FAO</option>
-																							<option value="FAO (COMM)">FAO (COMM)</option>
-																							<option value="FAO-IPD">FAO-IPD</option>
-																							<option value="FAO(OS)">FAO(OS)</option>
-																							<option value="FAO(OS) (COMM)">FAO(OS) (COMM)</option>
-																							<option value="FAO(OS)(IPD)">FAO(OS)(IPD)</option>
-																							<option value="GCAC">GCAC</option>
-																							<option value="GCAR">GCAR</option>
-																							<option value="GTA">GTA</option>
-																							<option value="GTC">GTC</option>
-																							<option value="GTR">GTR</option>
-																							<option value="I.A.">I.A.</option>
-																							<option value="I.P.A.">I.P.A.</option>
-																							<option value="ITA">ITA</option>
-																							<option value="ITC">ITC</option>
-																							<option value="ITR">ITR</option>
-																							<option value="ITSA">ITSA</option>
-																							<option value="LA.APP.">LA.APP.</option>
-																							<option value="LPA">LPA</option>
-																							<option value="MAC.APP.">MAC.APP.</option>
-																							<option value="MAT.">MAT.</option>
-																							<option value="MAT.APP.">MAT.APP.</option>
-																							<option value="MAT.APP.(F.C.)">MAT.APP.(F.C.)</option>
-																							<option value="MAT.CASE">MAT.CASE</option>
-																							<option value="MAT.REF.">MAT.REF.</option>
-																							<option value="MISC. APPEAL(PMLA)">MISC. APPEAL(PMLA)</option>
-																							<option value="OA">OA</option>
-																							<option value="OCJA">OCJA</option>
-																							<option value="O.M.P.">O.M.P.</option>
-																							<option value="O.M.P. (COMM)">O.M.P. (COMM)</option>
-																							<option value="OMP (CONT.)">OMP (CONT.)</option>
-																							<option value="O.M.P. (E)">O.M.P. (E)</option>
-																							<option value="O.M.P. (E) (COMM.)">O.M.P. (E) (COMM.)</option>
-																							<option value="O.M.P.(EFA)(COMM.)">O.M.P.(EFA)(COMM.)</option>
-																							<option value="OMP (ENF.) (COMM.)">OMP (ENF.) (COMM.)</option>
-																							<option value="O.M.P.(I)">O.M.P.(I)</option>
-																							<option value="O.M.P.(I) (COMM.)">O.M.P.(I) (COMM.)</option>
-																							<option value="O.M.P. (J) (COMM.)">O.M.P. (J) (COMM.)</option>
-																							<option value="O.M.P. (MISC.)">O.M.P. (MISC.)</option>
-																							<option value="O.M.P.(MISC.)(COMM.)">O.M.P.(MISC.)(COMM.)</option>
-																							<option value="O.M.P.(T)">O.M.P.(T)</option>
-																							<option value="O.M.P. (T) (COMM.)">O.M.P. (T) (COMM.)</option>
-																							<option value="O.REF.">O.REF.</option>
-																							<option value="RC.REV.">RC.REV.</option>
-																							<option value="RC.S.A.">RC.S.A.</option>
-																							<option value="RERA APPEAL">RERA APPEAL</option>
-																							<option value="REVIEW PET.">REVIEW PET.</option>
-																							<option value="RFA">RFA</option>
-																							<option value="RFA(COMM)">RFA(COMM)</option>
-																							<option value="RFA-IPD">RFA-IPD</option>
-																							<option value="RFA(OS)">RFA(OS)</option>
-																							<option value="RFA(OS)(COMM)">RFA(OS)(COMM)</option>
-																							<option value="RF(OS)(IPD)">RF(OS)(IPD)</option>
-																							<option value="RSA">RSA</option>
-																							<option value="SCA">SCA</option>
-																							<option value="SDR">SDR</option>
-																							<option value="SERTA">SERTA</option>
-																							<option value="ST.APPL.">ST.APPL.</option>
-																							<option value="STC">STC</option>
-																							<option value="ST.REF.">ST.REF.</option>
-																							<option value="SUR.T.REF.">SUR.T.REF.</option>
-																							<option value="TEST.CAS.">TEST.CAS.</option>
-																							<option value="TR.P.(C)">TR.P.(C)</option>
-																							<option value="TR.P.(C.)">TR.P.(C.)</option>
-																							<option value="TR.P.(CRL.)">TR.P.(CRL.)</option>
-																							<option value="VAT APPEAL">VAT APPEAL</option>
-																							<option value="W.P.(C)">W.P.(C)</option>
-																							<option value="W.P.(C)-IPD">W.P.(C)-IPD</option>
-																							<option value="WP(C)(IPD)">WP(C)(IPD)</option>
-																							<option value="W.P.(CRL)">W.P.(CRL)</option>
-																							<option value="WTA">WTA</option>
-																							<option value="WTC">WTC</option>
-																							<option value="WTR">WTR</option>
-																					</select>
-									</div>
-								</div>
-								<div class="col-12 col-sm-12 col-md-12 col-xl-4">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Case Number :" name="case_number" id="case_number">
-										<label for="name" class="form__label">Case Number :</label>
-									</div>
-								</div>
-								<div class="col-12 col-sm-12 col-md-12 col-xl-4">
-									<div class="form-group">
-										<label>Year:</label>
-										<select class="form-control" name="case_year" id="case_year">
-											<option value="">Select</option>
-																							<option value="2025">2025</option>
-																							<option value="2024">2024</option>
-																							<option value="2023">2023</option>
-																							<option value="2022">2022</option>
-																							<option value="2021">2021</option>
-																							<option value="2020">2020</option>
-																							<option value="2019">2019</option>
-																							<option value="2018">2018</option>
-																							<option value="2017">2017</option>
-																							<option value="2016">2016</option>
-																							<option value="2015">2015</option>
-																							<option value="2014">2014</option>
-																							<option value="2013">2013</option>
-																							<option value="2012">2012</option>
-																							<option value="2011">2011</option>
-																							<option value="2010">2010</option>
-																							<option value="2009">2009</option>
-																							<option value="2008">2008</option>
-																							<option value="2007">2007</option>
-																							<option value="2006">2006</option>
-																							<option value="2005">2005</option>
-																							<option value="2004">2004</option>
-																							<option value="2003">2003</option>
-																							<option value="2002">2002</option>
-																							<option value="2001">2001</option>
-																							<option value="2000">2000</option>
-																							<option value="1999">1999</option>
-																							<option value="1998">1998</option>
-																							<option value="1997">1997</option>
-																							<option value="1996">1996</option>
-																							<option value="1995">1995</option>
-																							<option value="1994">1994</option>
-																							<option value="1993">1993</option>
-																							<option value="1992">1992</option>
-																							<option value="1991">1991</option>
-																							<option value="1990">1990</option>
-																							<option value="1989">1989</option>
-																							<option value="1988">1988</option>
-																							<option value="1987">1987</option>
-																							<option value="1986">1986</option>
-																							<option value="1985">1985</option>
-																							<option value="1984">1984</option>
-																							<option value="1983">1983</option>
-																							<option value="1982">1982</option>
-																							<option value="1981">1981</option>
-																							<option value="1980">1980</option>
-																							<option value="1979">1979</option>
-																							<option value="1978">1978</option>
-																							<option value="1977">1977</option>
-																							<option value="1976">1976</option>
-																							<option value="1975">1975</option>
-																							<option value="1974">1974</option>
-																							<option value="1973">1973</option>
-																							<option value="1972">1972</option>
-																							<option value="1971">1971</option>
-																							<option value="1970">1970</option>
-																							<option value="1969">1969</option>
-																							<option value="1968">1968</option>
-																							<option value="1967">1967</option>
-																							<option value="1966">1966</option>
-																							<option value="1965">1965</option>
-																							<option value="1964">1964</option>
-																							<option value="1963">1963</option>
-																							<option value="1962">1962</option>
-																							<option value="1961">1961</option>
-																							<option value="1960">1960</option>
-																							<option value="1959">1959</option>
-																							<option value="1958">1958</option>
-																							<option value="1957">1957</option>
-																							<option value="1956">1956</option>
-																							<option value="1955">1955</option>
-																							<option value="1954">1954</option>
-																							<option value="1953">1953</option>
-																							<option value="1952">1952</option>
-																							<option value="1951">1951</option>
-																					</select>
-									</div>
-								</div>
-							</div>
-							<!-- Captcha start -->
-							<div class="row">
-								<!-- <div class="col-12 col-sm-12 col-md-12 col-xl-3">
-									<div class="form-group">
-										<img src="https://delhihighcourt.nic.in/app/getCaptcha" alt="captcha"
-											class="captcha-image mr-4" id="captcha-image">
-											<a href="javascript:void(0)" id="reload-captcha"><i
-												class="fas fa-refresh mr-4"></i></a>
-											    <a href="javascript:void(0)" id="play-captcha-audio"><i class="fas fa-volume-up mr-4"></i></a>
-									</div>
-									<audio id="audio-captcha" style="display: none;">
-										<source src="https://delhihighcourt.nic.in/app/captchaAudio" type="audio/mpeg">
-										Your browser does not support the audio element.
-									</audio>
-								</div>
-								<div class="col-12 col-sm-12 col-md-12 col-xl-3">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="" name="captchaInput"
-											id="captchaInput">
-										<label for="name" class="form__label">Enter Captcha Code Here :</label>
-									</div>
-								</div> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="multistep_content">
+
+                    <div class="tab-content">
+                        <div class="tab-pane container active" id="menu1">
 
 
-								<div class="col-12 col-sm-12 col-md-12 col-xl-3">
-                                    <div class="form-group">
-                                        <label id="cap" class="captcha-label mr-4">
-                                            <span id="captcha-code" class="captcha-code">6296</span>
-                                        </label>
-                                        <a href="javascript:void(0)" id="reload-captcha"><i class="fas fa-sync mr-4"></i></a>
-                                        <a href="javascript: playAudio();">
-                                            <i class="fas fa-volume-up mr-4"></i>
-                                        </a>
-                                    </div>
-                                    <audio id="myAudio">
-                                        <source src="" type="audio/wav">
-                                        Your browser does not support the audio element.
-                                    </audio>
-                                    <input type="hidden" name="randomid" id="randomid" value="6296">
+                            <h5 id="pet_name"></h5>
+                            <div class="table-responsive mt-4">
+                                <div id="caseTable_wrapper" class="dt-container dt-empty-footer"><div class="dt-layout-row"><div class="dt-layout-cell dt-start "><div class="dt-length"><select name="caseTable_length" aria-controls="caseTable" class="dt-input" id="dt-length-0"><option value="50">50</option><option value="100">100</option><option value="200">200</option><option value="-1">All</option></select><label for="dt-length-0"> entries per page</label></div></div><div class="dt-layout-cell dt-end "><div class="dt-search"><label for="dt-search-0">Search:</label><input type="search" class="dt-input" id="dt-search-0" placeholder="" aria-controls="caseTable"></div></div></div><div class="dt-layout-row dt-layout-table"><div class="dt-layout-cell "><div id="caseTable_processing" class="dt-processing" role="status" style="display: none;"><div><div></div><div></div><div></div><div></div></div></div><table class="table table-hover table-bordered text-center dataTable" id="caseTable" style="width: 100%;" aria-describedby="caseTable_info"><colgroup><col data-dt-column="0" style="width: 96px;"><col data-dt-column="1" style="width: 228.812px;"><col data-dt-column="2" style="width: 172.016px;"><col data-dt-column="3" style="width: 307.969px;"><col data-dt-column="4" style="width: 174.203px;"></colgroup>
+                                    <thead>
+                                        <tr role="row"><th data-dt-column="0" rowspan="1" colspan="1" class="dt-orderable-none dt-ordering-asc" aria-sort="ascending" aria-label="S.No."><span class="dt-column-title">S.No.</span><span class="dt-column-order"></span></th><th data-dt-column="1" rowspan="1" colspan="1" class="dt-orderable-asc dt-orderable-desc" aria-label="Case No/Order Link.: Activate to sort" tabindex="0"><span class="dt-column-title" role="button">Case No/Order Link.</span><span class="dt-column-order"></span></th><th data-dt-column="2" rowspan="1" colspan="1" class="dt-orderable-asc dt-orderable-desc" aria-label="Date of Order: Activate to sort" tabindex="0"><span class="dt-column-title" role="button">Date of Order</span><span class="dt-column-order"></span></th><th data-dt-column="3" rowspan="1" colspan="1" class="dt-orderable-asc dt-orderable-desc" aria-label="Corrigendum Link/Corr. Date: Activate to sort" tabindex="0"><span class="dt-column-title" role="button">Corrigendum Link/Corr. Date</span><span class="dt-column-order"></span></th><th data-dt-column="4" rowspan="1" colspan="1" class="dt-orderable-asc dt-orderable-desc" aria-label="HINDI ORDER: Activate to sort" tabindex="0"><span class="dt-column-title" role="button">HINDI ORDER</span><span class="dt-column-order"></span></th></tr>
+
+                                    </thead>
+                                    <tbody><tr><td class="sorting_1">1</td><td><a href="https://delhihighcourt.nic.in/app/showlogo/1753861740_3d266b37d8214be6_745_1282023.pdf/2025" target="_blank">CS(OS) 128/2023</a></td><td>29/07/2025</td><td></td><td></td></tr><tr><td class="sorting_1">2</td><td><a href="https://delhihighcourt.nic.in/app/showlogo/525552171743865817907_68404_1282023.pdf/2025" target="_blank">CS(OS) 128/2023</a></td><td>01/04/2025</td><td></td><td></td></tr><tr><td class="sorting_1">3</td><td><a href="https://delhihighcourt.nic.in/app/showlogo/156342851737352758541_85606_1282023.pdf/2025" target="_blank">CS(OS) 128/2023</a></td><td>16/01/2025</td><td></td><td></td></tr><tr><td class="sorting_1">4</td><td><a href="https://delhihighcourt.nic.in/app/showlogo/919053861737198666952_85742_1282023.pdf/2025" target="_blank">CS(OS) 128/2023</a></td><td>14/01/2025</td><td></td><td></td></tr><tr><td class="sorting_1">5</td><td><a href="https://delhihighcourt.nic.in/app/showlogo/919053861726139455359_93059_1282023.pdf/2024" target="_blank">CS(OS) 128/2023</a></td><td>11/09/2024</td><td></td><td></td></tr><tr><td class="sorting_1">6</td><td><a href="https://delhihighcourt.nic.in/app/showlogo/100013111712059056102_95799_1282023.pdf/2024" target="_blank">CS(OS) 128/2023</a></td><td>28/03/2024</td><td></td><td></td></tr><tr><td class="sorting_1">7</td><td><a href="https://delhihighcourt.nic.in/app/showlogo/100013111707732456576_15925_1282023.pdf/2024" target="_blank">CS(OS) 128/2023</a></td><td>12/02/2024</td><td></td><td></td></tr><tr><td class="sorting_1">8</td><td><a href="https://delhihighcourt.nic.in/app/showlogo/100013111702975825518_10367_1282023.pdf/2023" target="_blank">CS(OS) 128/2023</a></td><td>15/12/2023</td><td></td><td></td></tr><tr><td class="sorting_1">9</td><td><a href="https://delhihighcourt.nic.in/app/showlogo/1692177345299_57178_2023.pdf/2023" target="_blank">CS(OS) 128/2023</a></td><td>14/08/2023</td><td></td><td></td></tr><tr><td class="sorting_1">10</td><td><a href="https://delhihighcourt.nic.in/app/showlogo/1684223905657_91529_2023.pdf/2023" target="_blank">CS(OS) 128/2023</a></td><td>12/05/2023</td><td></td><td></td></tr><tr><td class="sorting_1">11</td><td><a href="https://delhihighcourt.nic.in/app/showlogo/1677563884486_62955_2023.pdf/2023" target="_blank">CS(OS) 128/2023</a></td><td>24/02/2023</td><td></td><td></td></tr></tbody>
+                                <tfoot></tfoot></table></div></div><div class="dt-layout-row"><div class="dt-layout-cell dt-start "><div class="dt-info" aria-live="polite" id="caseTable_info" role="status">Showing 1 to 11 of 11 entries</div></div><div class="dt-layout-cell dt-end "><div class="dt-paging paging_full_numbers"><button class="dt-paging-button disabled first" role="link" type="button" aria-controls="caseTable" aria-disabled="true" aria-label="First" data-dt-idx="first" tabindex="-1">«</button><button class="dt-paging-button disabled previous" role="link" type="button" aria-controls="caseTable" aria-disabled="true" aria-label="Previous" data-dt-idx="previous" tabindex="-1">‹</button><button class="dt-paging-button current" role="link" type="button" aria-controls="caseTable" aria-current="page" data-dt-idx="0" tabindex="0">1</button><button class="dt-paging-button disabled next" role="link" type="button" aria-controls="caseTable" aria-disabled="true" aria-label="Next" data-dt-idx="next" tabindex="-1">›</button><button class="dt-paging-button disabled last" role="link" type="button" aria-controls="caseTable" aria-disabled="true" aria-label="Last" data-dt-idx="last" tabindex="-1">»</button></div></div></div></div>
+
+                                <div class="disclaimer">
+                                    <span style="text-align: justify;"><b class="text-primary"> Disclaimer :</b> The
+                                        content of this site is only for information purpose. Users are advised not to
+                                        depend on the information and use it for official purpose. Neither the High
+                                        Court of Delhi nor the National Informatics Centre , Ministry of Information
+                                        Technology, Government of India is responsible for any damages arising in
+                                        contract from the use of the content of this site.</span>
                                 </div>
-                                <div class="col-12 col-sm-12 col-md-12 col-xl-3">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="" name="captchaInput" id="captchaInput">
-                                        <label for="name" class="form__label">Enter Captcha Code Here :</label>
-                                    </div>
-                                </div>
-
-
-							</div>
-							<!-- Captcha end -->
-							<div class="row">
-								<div class="col-12 col-sm-12 col-md-12 col-xl-4">
-									<!-- <a class="btn yellow-btn" href="javascript:void(0)" id="search">Submit</a> -->
-									<button class="btn yellow-btn" id="search">Submit</button>
-								</div>
-							</div>
-
-							<h5 id="pet_name"></h5>
-							<div class="table-responsive mt-4">
-								<div id="caseTable_wrapper" class="dt-container dt-empty-footer"><div class="dt-layout-row"><div class="dt-layout-cell dt-start "><div class="dt-length"><select name="caseTable_length" aria-controls="caseTable" class="dt-input" id="dt-length-0"><option value="50">50</option><option value="100">100</option><option value="200">200</option><option value="-1">All</option></select><label for="dt-length-0"> entries per page</label></div></div><div class="dt-layout-cell dt-end "><div class="dt-search"><label for="dt-search-0">Search:</label><input type="search" class="dt-input" id="dt-search-0" placeholder="" aria-controls="caseTable"></div></div></div><div class="dt-layout-row dt-layout-table"><div class="dt-layout-cell "><div id="caseTable_processing" class="dt-processing" role="status" style="display: none;"><div><div></div><div></div><div></div><div></div></div></div><table class="table table-hover table-bordered text-center dataTable" id="caseTable" style="width: 100%;" aria-describedby="caseTable_info"><colgroup><col data-dt-column="0" style="width: 100.562px;"><col data-dt-column="1" style="width: 318.984px;"><col data-dt-column="2" style="width: 291.766px;"><col data-dt-column="3" style="width: 267.688px;"></colgroup>
-									<thead>
-										<tr role="row"><th data-dt-column="0" rowspan="1" colspan="1" class="dt-orderable-none dt-ordering-asc" aria-sort="ascending" aria-label="S.No."><span class="dt-column-title">S.No.</span><span class="dt-column-order"></span></th><th data-dt-column="1" rowspan="1" colspan="1" class="dt-orderable-asc dt-orderable-desc" aria-label="Diary No. / Case No.[STATUS]: Activate to sort" tabindex="0"><span class="dt-column-title" role="button">Diary No. / Case No.[STATUS]</span><span class="dt-column-order"></span></th><th data-dt-column="2" rowspan="1" colspan="1" class="dt-orderable-asc dt-orderable-desc" aria-label="Petitioner Vs. Respondent: Activate to sort" tabindex="0"><span class="dt-column-title" role="button">Petitioner Vs. Respondent</span><span class="dt-column-order"></span></th><th data-dt-column="3" rowspan="1" colspan="1" class="dt-orderable-asc dt-orderable-desc" aria-label="Listing Date / Court No.: Activate to sort" tabindex="0"><span class="dt-column-title" role="button">Listing Date / Court No.</span><span class="dt-column-order"></span></th></tr>
-									</thead>
-									<tbody><tr><td class="sorting_1">1</td><td><a>CS(OS)</a> - 123 / 2023 <br><font color="green">[PENDING]</font><br> <a href="https://delhihighcourt.nic.in/app/case-type-status-details/eyJpdiI6InNEMFEyd21RTFg5c2RRSjQxbW1EdkE9PSIsInZhbHVlIjoibTZqQUJ2ei95Ky92ZmpVVk5mTGJjUT09IiwibWFjIjoiOTIwNmYwYzE4MTE1YjYwYWYzZDIwOGFiN2M3ZjUwMGI5ZWJkM2QzYjJkZGY0OGJlNGM4MGI5NjVkZTkyYzM0NyIsInRhZyI6IiJ9/eyJpdiI6InFqYWVuaFpzME0ySFBtSDMveHdMWmc9PSIsInZhbHVlIjoiUGR5dHJYemxLS3R0MXpmYjM5eEFxQT09IiwibWFjIjoiYzg0YjM1Y2NkOWU4OTY2ZjA2MDI2NDA2Y2E2NmE3N2Y1ZDNlYTRmMTY0YzEwOGQ2NWYzNjYxYWFiYThjYjZhMCIsInRhZyI6IiJ9/eyJpdiI6IkdBd3dORk02aHNyQWtsNDRMbkQyQmc9PSIsInZhbHVlIjoiaUo3a0Z4OHpidnFmeTNaNmNWZVR0UT09IiwibWFjIjoiZGNmZDk2OGY4NTZlOTZiZTMzN2MyMWJkZjFlN2VjMTFjN2Q5Mzk4NTU2MjI4M2JlNWVmNDIyMDMwMTUxMzc0MSIsInRhZyI6IiJ9" '="" style="color:blue; text-decoration: underline;"><strong>Orders</strong></a></td><td>CHARANJIV KAUR<br>VS.&nbsp;&nbsp; <br> TEJPAL SINGH &amp; ORS.<br>
-				</td><td>NEXT DATE: 10/09/2025
-			   	<br>Last Date: 28/07/2025
-			   	<br>COURT NO:44 </td></tr></tbody>
-								<tfoot></tfoot></table></div></div><div class="dt-layout-row"><div class="dt-layout-cell dt-start "><div class="dt-info" aria-live="polite" id="caseTable_info" role="status">Showing 1 to 1 of 1 entry</div></div><div class="dt-layout-cell dt-end "><div class="dt-paging paging_full_numbers"><button class="dt-paging-button disabled first" role="link" type="button" aria-controls="caseTable" aria-disabled="true" aria-label="First" data-dt-idx="first" tabindex="-1">«</button><button class="dt-paging-button disabled previous" role="link" type="button" aria-controls="caseTable" aria-disabled="true" aria-label="Previous" data-dt-idx="previous" tabindex="-1">‹</button><button class="dt-paging-button current" role="link" type="button" aria-controls="caseTable" aria-current="page" data-dt-idx="0" tabindex="0">1</button><button class="dt-paging-button disabled next" role="link" type="button" aria-controls="caseTable" aria-disabled="true" aria-label="Next" data-dt-idx="next" tabindex="-1">›</button><button class="dt-paging-button disabled last" role="link" type="button" aria-controls="caseTable" aria-disabled="true" aria-label="Last" data-dt-idx="last" tabindex="-1">»</button></div></div></div></div>
-								<div class="disclaimer">
-									<span style="text-align: justify;"><b class="text-primary"> Disclaimer :</b> The
-										content of this site is only for information purpose. Users are advised not to
-										depend on the information and use it for official purpose. Neither the High
-										Court of Delhi nor the National Informatics Centre , Ministry of Information
-										Technology, Government of India is responsible for any damages arising in
-										contract from the use of the content of this site.</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/tesseract.js"></script>
 
     <footer>
 		<!-- Important Links Section Start -->
@@ -855,7 +513,7 @@
 								<a href="https://delhihighcourt.nic.in/web/live-streaming">Live Streaming</a>
 							</li>
 							<li>
-								<a href="https://delhihighcourt.nic.in/app/harassment">Sexual Harassment Complaints</a>
+								<a href="https://delhihighcourt.nic.in/web/sexual-harassment-complaint">Sexual Harassment Complaints</a>
 							</li>
 						</ul>
 					</div>
@@ -1096,144 +754,65 @@ window.onload = function() {
 </script>
 
    
-        <script>
-    // This function is called when the "Play Audio" button is clicked
-    function playAudio() {
-        var code = document.getElementById("randomid").value; // Get the captcha code
-        var audioSrc = "https://delhihighcourt.nic.in/app/storage/app/public/captcha_audios/" + code + ".wav"; // Build the URL
-        var audio = document.getElementById("myAudio");
-        audio.src = audioSrc; // Set the audio source
-        audio.play(); // Play the audio
-    }
-
-    // Function to refresh the captcha image when the refresh button is clicked
-    function refreshCaptcha() {
-        location.reload();
-    }
-</script>
- 
-
-<script type="text/javascript">
-	$(document).ready(function () 
-	{
-
-
-		$('#reload-captcha').on('click', function() {
-            $.ajax({
-                url: "https://delhihighcourt.nic.in/app/generate-captcha", // Route to generate captcha
-                method: 'GET',
-                dataType: 'json',
-                success: function(response) {
-                    // Update the captcha code in the label with the new code
-                    $('#captcha-code').text(response.captcha_code);
-
-                    // Update the hidden input 'randomid' with the new captcha code
-                    document.getElementById('randomid').value = response.captcha_code;
-
-                    // Update the audio source dynamically if you want to update it as well
-                    $('#captcha-audio').attr('src', response.audio_url); // Update the audio URL
+        <script type="text/javascript">
+$(document).ready(function() {
+    var table = $('#caseTable').DataTable({
+        processing: true,
+        serverSide: true,
+        destroy: true,
+        ajax: {
+            url: 'https://delhihighcourt.nic.in/app/case-type-status-details/eyJpdiI6Ikt1eEJwOURVV2hMN3l4NzZkTkxVMFE9PSIsInZhbHVlIjoidzc0dS9CUzdiQTJVdjJWSXh2MzVidz09IiwibWFjIjoiODM5MTdlZDhmZjhiNDExYzM3YTA3NTM2MTFkZmUxODBhMWY0ODBjOWU3YzI2YzNiZDc0ODAxMjk5NThmNGQ5NCIsInRhZyI6IiJ9/eyJpdiI6IklLbXFYdUtyVWRXMmRETEdiNmd5V1E9PSIsInZhbHVlIjoiT1FXNXJmWTlRNlE5dnZNbzcrMkdwdz09IiwibWFjIjoiM2I4MWI3YTA2YjE4NDE4MWI4ODAxZDA4NDllZmMyNTQ2YjRkYzQzMDA5YzQyZmFmZGMyNDM3ZGMyYTM5YTdkNSIsInRhZyI6IiJ9/eyJpdiI6IlJRM2tuaXovOFVmOWZYVmxVWVk2bEE9PSIsInZhbHVlIjoiOUI0QkplQVZUalZIWVNLOHZzUm93QT09IiwibWFjIjoiOGE5NmZmNDcwZjllNWZiN2I2ZmU2MDRiMGYyOGVhYTk5MDE2MzJiZmQ3M2Y4Y2E4ZGQ1OWVhMWU4Y2VjOTVkMyIsInRhZyI6IiJ9',
+            data: function(d) {
+                d.case_type = $('#case_type').val();
+                //alert($('#case_type').val());
+                d.case_number = $('#case_number').val();
+                d.year = $('#year').val();
+            }
+        },
+        columns: [{
+                data: 'DT_RowIndex',
+                name: 'DT_RowIndex',
+                orderable: false
+            },
+            {
+                data: 'case_no_order_link',
+                name: 'case_no_order_link',
+                orderable: true
+            },
+            {
+                name: 'order_date.timestamp',
+                data: {
+                    _: 'order_date.display',
+                    sort: 'order_date.timestamp'
                 },
-                error: function() {
-                    alert("Error loading captcha.");
-                }
-            });
-        });
+                orderable: true
+            },
+            {
+                data: 'corrigendum',
+                name: 'corrigendum',
+                orderable: true
+            },
+            {
+                data: 'hindi_order',
+                name: 'hindi_order',
+                orderable: true
+            },
+        ],
+        aLengthMenu: [
+            [50, 100, 200, -1],
+            [50, 100, 200, "All"]
+        ],
+    });
 
-
-		
-		// Reload the image CAPTCHA
-		function reloadCaptcha() {
-			$('#captcha-image').attr('src', 'https://delhihighcourt.nic.in/app/getCaptcha?' + Math.random());
-		}
-
-		// Reload CAPTCHA when the refresh icon is clicked
-		$('#reload-captcha').on('click', function () {
-			reloadCaptcha();
-		}); 
-		 
-		  
-	 
-		var table = $('#registrarsTableValue').DataTable({
-			"bJQueryUI": true,
-			"bSort": false,
-			"bPaginate": true,
-			"sPaginationType": "full_numbers",
-			"iDisplayLength": 20
-		});
-
-		// Initialize DataTable for case table with server-side processing
-		var table = $('#caseTable').DataTable({
-			processing: true,
-			serverSide: true,
-			destroy: true,
-			ajax: {
-				url: 'https://delhihighcourt.nic.in/app/get-case-type-status',
-				data: function (d) {
-					d.case_type = $('#case_type').val();
-					d.case_number = $('#case_number').val();
-					d.case_year = $('#case_year').val();
-				},
-			},
-			columns: [
-				{ data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: false },
-				{ data: 'ctype', name: 'ctype', orderable: true },
-				{ data: 'pet', name: 'pet', orderable: true },
-				{ data: 'orderdate', name: 'orderdate', orderable: true },
-			],
-			aLengthMenu: [
-				[50, 100, 200, -1],
-				[50, 100, 200, "All"]
-			],
-		});
-
-		// Handle search click event and validate CAPTCHA
-		$('#search').on('click', function (e) {
-			e.preventDefault();
-
-			var case_type = $("#case_type").val();
-			var case_number = $("#case_number").val();
-			var year = $("#case_year").val();
-			var captchaInput = $("#captchaInput").val();
-			
-			// Check for empty fields
-			if (case_type == '') {
-				Swal.fire('Alert', 'Case type field is required', 'warning');
-			}
-			else if (case_number == '') {
-				Swal.fire('Alert', 'Case number field is required', 'warning');
-			}
-			else if (year == '') {
-				Swal.fire('Alert', 'Year field is required', 'warning');
-			} else {
-				// Validate CAPTCHA before submitting the form
-				$.ajax({
-					url: 'https://delhihighcourt.nic.in/app/validateCaptcha',
-					type: 'POST',
-					data: { "_token": "QjCzjCyjC5sdtBASj0Vf4w8i2GCHCstjcUnAkfen", "captchaInput": captchaInput },
-					success: function (response) {
-						if (response.success == true) {
-							// CAPTCHA is validated, submit the form
-							table.draw();  // Submit the form (or update the table)
-						} else {
-							Swal.fire('Alert', 'CAPTCHA is incorrect. Please try again.', 'error');
-							reloadCaptcha();  // Reload the image CAPTCHA
-							$("#captchaInput").val("");  // Clear the CAPTCHA input field
-						}
-					},
-					error: function () {
-						Swal.fire('Error', 'CAPTCHA validation failed. Please try again later.', 'error');
-					}
-				});
-			}
-		});
-	});
+    table.draw();
+});
 </script>
-
-
-
-	 
-
-
 
 
 </body></html>
+
+Debug Info:
+Navigating to pdf_link: https://delhihighcourt.nic.in/app/case-type-status-details/eyJpdiI6Ikt1eEJwOURVV2hMN3l4NzZkTkxVMFE9PSIsInZhbHVlIjoidzc0dS9CUzdiQTJVdjJWSXh2MzVidz09IiwibWFjIjoiODM5MTdlZDhmZjhiNDExYzM3YTA3NTM2MTFkZmUxODBhMWY0ODBjOWU3YzI2YzNiZDc0ODAxMjk5NThmNGQ5NCIsInRhZyI6IiJ9/eyJpdiI6IklLbXFYdUtyVWRXMmRETEdiNmd5V1E9PSIsInZhbHVlIjoiT1FXNXJmWTlRNlE5dnZNbzcrMkdwdz09IiwibWFjIjoiM2I4MWI3YTA2YjE4NDE4MWI4ODAxZDA4NDllZmMyNTQ2YjRkYzQzMDA5YzQyZmFmZGMyNDM3ZGMyYTM5YTdkNSIsInRhZyI6IiJ9/eyJpdiI6IlJRM2tuaXovOFVmOWZYVmxVWVk2bEE9PSIsInZhbHVlIjoiOUI0QkplQVZUalZIWVNLOHZzUm93QT09IiwibWFjIjoiOGE5NmZmNDcwZjllNWZiN2I2ZmU2MDRiMGYyOGVhYTk5MDE2MzJiZmQ3M2Y4Y2E4ZGQ1OWVhMWU4Y2VjOTVkMyIsInRhZyI6IiJ9
+Found first table row
+Found 5 cells in first row
+Order link found: https://delhihighcourt.nic.in/app/showlogo/1753861740_3d266b37d8214be6_745_1282023.pdf/2025

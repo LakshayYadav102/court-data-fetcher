@@ -86,8 +86,8 @@ A short demo (≤ 5 mins) showing:
 - Output metadata
 - PDF preview/download
 
-> Link: [To be uploaded]
-
+> Link:
+https://drive.google.com/file/d/1RMv5lVCSVJk5sO-Kgw_3maGMXns24a3P/view?usp=drive_link
 ---
 
 
